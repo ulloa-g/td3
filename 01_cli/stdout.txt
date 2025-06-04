@@ -1,0 +1,12 @@
+total 140
+-rwxrwxr-x 1 gabriel gabriel   722 jun  4 00:05 ej01.sh
+-rwxrwxr-x 1 gabriel gabriel  1350 jun  4 00:45 ej02.sh
+-rwxrwxr-x 1 gabriel gabriel   421 jun  4 02:18 ej03.sh
+-rwxrwxr-x 1 gabriel gabriel 16048 jun  4 02:53 ej04
+-rw-rw-r-- 1 gabriel gabriel   128 jun  4 02:22 ej04.c
+-rwxrwxr-x 1 gabriel gabriel   712 jun  4 02:52 ej04.sh
+drwxrwxr-x 3 gabriel gabriel  4096 jun  4 00:03 ejercicio_bash
+drwxrwxr-x 2 gabriel gabriel  4096 jun  4 00:25 ejercicio_bash_avanzado
+drwxrwxr-x 6 gabriel gabriel  4096 jun  4 02:17 ejercicio_rutas
+-rw-rw-r-- 1 gabriel gabriel     0 jun  4 02:53 stdout.txt
+-rw-rw-r-- 1 gabriel gabriel 92714 jun  3 22:53 TP_Linea-de-comando_v002.pdf
