@@ -1,0 +1,15 @@
+comando bash:
+ps aux | grep ej13 > ej13_status.txt
+
+Proceso padre PID: 23624
+Proceso hijo PID: 23625
+
+USER       PID    %CPU %RAM  %MEM  VSZ  TTY      STAT START   TIME COMMAND
+gabriel    23624  0.0  0.0   2776  1408 pts/0    S+   14:39   0:00 ./ej13
+gabriel    23625  0.0  0.0      0     0 pts/0    Z+   14:39   0:00 [ej13] <defunct>
+gabriel    23633  0.0  0.0  11744  2688 pts/1    S+   14:39   0:00 grep --color=auto ej13
+
+R: Running (Ejecutándose)
+S: Sleeping (Durmiendo, esperando un evento)
+Z: Zombie (Proceso terminado, pero su entrada en la tabla de procesos aún no ha sido limpiada por el padre)
+T: Stopped (Detenido)
