@@ -9,5 +9,4 @@ echo "Ejecutando " $FILE_NAME
 ./ej10
 
 echo "Programa finalizado."
-echo "Puede verificar el EXIT STATUS con el comando"
 
