@@ -1,0 +1,16 @@
+comando bash:
+ps aux | grep ej10 > ej10_status.txt
+
+Proceso padre (PID=20103)
+Proceso hijo  (PID=20104)
+
+USER       PID   %CPU %RAM  %MEM   VSZ  TTY      STAT START   TIME COMMAND
+gabriel    20096  0.0  0.0  12636  3968 pts/0    S+   12:06   0:00 /bin/bash ./ej10.sh
+gabriel    20103  0.0  0.0   2776  1408 pts/0    S+   12:06   0:00 ./ej10
+gabriel    20104  0.0  0.0   2776   896 pts/0    S+   12:06   0:00 ./ej10
+gabriel    20109  0.0  0.0  11744  2688 pts/1    R+   12:06   0:00 grep --color=auto ej10
+
+R: Running (Ejecutándose)
+S: Sleeping (Durmiendo, esperando un evento)
+Z: Zombie (Proceso terminado, pero su entrada en la tabla de procesos aún no ha sido limpiada por el padre)
+T: Stopped (Detenido)
