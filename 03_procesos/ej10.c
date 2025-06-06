@@ -39,3 +39,8 @@ int main()
     
     return 0;
 }
+
+/*
+Notar que el proceso padre no espera al hijo, por lo que el hijo sigue corriendo
+después de que el padre ha terminado. Esto genera un proceso huérfano.
+*/
