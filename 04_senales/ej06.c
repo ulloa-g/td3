@@ -3,6 +3,7 @@
 #include <sys/types.h>
 #include <signal.h>
 #include <stdlib.h>
+#include <sys/wait.h>
 
 int main (){
 	pid_t chld1, chld2, chld3;
