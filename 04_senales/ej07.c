@@ -7,19 +7,18 @@
 
 pid_t chld;
 
-void manejador(int sig) {
-	if (sig == SIGCHLD) {
-		int status = wait(&status);
+void manejador(int sig_num) {
+	if (sig_num == SIGCHLD) {
+		int status;
+		pid_t pid = wait(&status);
 		printf("Se ha recibido la señal SIGCHLD en el proceso padre PID: %d\n", getpid());
-		printf("El hijo terminó con estado: %d\n", status);
-		pid_t pid = wait(NULL);
-		printf("La señal wait() devuelve: %d\n", pid);
-		wait(NULL); // Espera a que el hijo termine
+		printf("wait() devolvió PID: %d\n", pid);
+		printf("El hijo terminó con estado de salida: %d\n", status);
 	}
-	return 0;
 }
 
 int main() {
+	signal(SIGCHLD, manejador); // Registrar el manejador para SIGCHLD
 	chld = fork();
 	if(chld < 0){
 		perror("Falla al crear proceso hijo\n");
@@ -28,11 +27,12 @@ int main() {
 	else if(chld == 0){
 		printf("Proceso hijo PID: %d\n", getpid());
 		sleep(2);
-		exit(0);
+		exit(0);  // cuando el hijo termina, el sistema operativo envía automaticamente SIGCHLD al padre
 	}
 	else{
 		printf("Proceso padre PID: %d\n", getpid());
-		sleep(15);
+		sleep(60);
+		printf("P -> Hijo ha sido recolectado. Finalizando el padre.\n");
 	}
 	return 0;
 }
