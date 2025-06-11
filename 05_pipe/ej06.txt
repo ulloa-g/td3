@@ -1,0 +1,8 @@
+cdrom
+
+
+respuesta a la pregunta del ejercicio:
+comando:
+>  sobreescribe contenido de archivo.
+>> concatena (añade) la nueva salida al final del archivo.
+
